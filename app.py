@@ -388,7 +388,8 @@ with onglet_carte:
                 ).add_to(m)
 
         # Affichage de la carte — st_folium (version moderne de folium_static)
-        st_folium(m, height=520, returned_objects=[])
+        from streamlit_folium import folium_static
+        folium_static(m, width=700, height=520)
         st.caption(f"📍 {len(df_filtre)} espace(s) affiché(s) · Survolez un marqueur pour les détails")
 
 
