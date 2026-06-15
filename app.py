@@ -195,8 +195,7 @@ with st.sidebar:
     villes_dispo = sorted(df["Ville"].replace("", "Non renseigné")
                            .dropna().unique().tolist())
     # On met Paris en premier dans les valeurs par défaut
-    defaut_villes = ["Paris"] if "Paris" in villes_dispo else villes_dispo[:1]
-
+    defaut_villes = villes_dispo
     villes_sel = st.multiselect(
         "🌆 Ville",
         options=villes_dispo,
