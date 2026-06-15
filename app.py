@@ -360,7 +360,7 @@ with onglet_carte:
               tooltip = f"{nom_v} | {adr_v} {cp_v} {ville_v} | 📞 {tel_v} | 🚇 {acces_v}"
 
                 # ── POPUP : infos + liens cliquables au clic ──────
-                lien_site   = f'<a href="{site_v}" target="_blank">🌐 Visiter le site</a>' \
+              lien_site   = f'<a href="{site_v}" target="_blank">🌐 Visiter le site</a>' \
                               if site_v.startswith("http") else ""
                 lien_source = f'<a href="{url_v}" target="_blank" style="font-size:0.8em;color:#999;">📄 Fiche source</a>' \
                               if url_v.startswith("http") else ""
