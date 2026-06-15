@@ -381,7 +381,7 @@ with onglet_carte:
                 """
 
                 # Ajout du marqueur — exactement comme le prof
-                folium.Marker(
+              folium.Marker(
                     geo,
                     popup=folium.Popup(p, max_width=300),
                     tooltip=folium.Tooltip(tooltip, sticky=True)
