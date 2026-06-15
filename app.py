@@ -357,18 +357,7 @@ with onglet_carte:
             # Vérification géocode — même condition que le prof
             if geo is not None and type(geo) == list:
 
-                # ── TOOLTIP : TOUTES les infos au survol ──────────
-                # (comme demandé : afficher toutes les infos en survolant)
-                tooltip = f"""
-                <div style="font-family:Arial,sans-serif; min-width:200px; max-width:280px;">
-                    <b style="font-size:0.95rem;color:#2C3E50;">{nom_v}</b><br>
-                    <span style="color:#27ae60;">📍 {adr_v}</span><br>
-                    <span style="color:#7f8c8d;">{cp_v} {ville_v}</span><br>
-                    {"<span>📞 " + tel_v + "</span><br>" if tel_v else ""}
-                    {"<span>🚇 " + acces_v + "</span><br>" if acces_v else ""}
-                    {"<span style='font-style:italic;font-size:0.82rem;color:#555;'>" + desc_v + "</span>" if desc_v else ""}
-                </div>
-                """
+              tooltip = f"{nom_v} | {adr_v} {cp_v} {ville_v} | 📞 {tel_v} | 🚇 {acces_v}"
 
                 # ── POPUP : infos + liens cliquables au clic ──────
                 lien_site   = f'<a href="{site_v}" target="_blank">🌐 Visiter le site</a>' \
