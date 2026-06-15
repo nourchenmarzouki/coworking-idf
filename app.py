@@ -384,7 +384,7 @@ with onglet_carte:
               folium.Marker(
                     geo,
                     popup=folium.Popup(p, max_width=300),
-                    tooltip=folium.Tooltip(tooltip, sticky=True)
+                    tooltip=folium.Tooltip(tooltip)
                 ).add_to(m)
 
         # Affichage de la carte — st_folium (version moderne de folium_static)
