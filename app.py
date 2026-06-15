@@ -365,7 +365,7 @@ with onglet_carte:
               lien_source = f'<a href="{url_v}" target="_blank" style="font-size:0.8em;color:#999;">📄 Fiche source</a>' \
                               if url_v.startswith("http") else ""
 
-                p = f"""
+              p = f"""
                 <div style="font-family:Arial,sans-serif;min-width:230px;max-width:290px;">
                     <h4 style="margin:0 0 5px;color:#2C3E50;">{nom_v}</h4>
                     <p style="margin:2px 0;font-size:0.82rem;color:#7f8c8d;">
